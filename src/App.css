@@ -1,0 +1,36 @@
+.App {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Establece la altura del contenedor al 100% de la ventana */
+}
+
+body {
+  display:flex;
+  justify-content: center;
+
+}
+
+.calculator {
+  width: 300px;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calculator > * {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.row {
+  grid-column: 1 / -1;
+}
+
+#display {
+  text-align: right;
+}
+
+#clear {
+  text-align: center;
+}
